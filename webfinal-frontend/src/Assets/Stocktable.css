@@ -1,0 +1,132 @@
+.stock-table{
+    width: 80%;
+    height: auto;
+    margin: 0 auto ;
+    border: 3px solid gray;
+}
+.table-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+    font-size: 22px;
+    font-weight: bolder;
+}
+.table-data{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 60px;
+    position: relative;
+}
+.table-data-field{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.table-data-overlay{
+    width: 150px;
+    height: 100px;
+    background-color: #f4f4f4;
+    display: none;
+    right: 40px;
+    position: absolute;
+    border-radius: 10px;
+    flex-direction: column;
+}
+.table-data-overlay.Open{
+    display: flex;
+}
+.table-data-dotmenu{
+    width: 20px;
+    height: 30px;
+    position: absolute;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: -9px;
+    cursor: pointer;
+}
+.table-data-dotmenu span{
+    height: 5px;
+    font-weight: 500;
+}
+.overlay-container{
+    display: flex;
+    justify-content: space-evenly;
+    height: 40%;
+    margin: auto 0;
+    align-items: center;
+}
+.count-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    font-weight: 900;
+    cursor: pointer;
+}
+.button-container{
+    width: 80%;
+    margin: 100px auto 10px;
+    position: relative;
+}
+.button-container .addButton{
+    width: 200px;
+    background-color: gray;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+.overlay-add-new{
+    display: none;
+    width: 300px;
+    height: 250px;
+    position: absolute;
+    left: 250px;
+    background-color: gray;
+    border-radius: 10px;
+    z-index: 2;
+    flex-direction: column;
+}
+.overlay-add-new.Open{
+    display: flex;
+}
+.overlay-field{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+}
+.overlay-field .overlay-label{
+    width: 45%;
+    margin: 0 0 0 auto;
+    color: white;
+}
+.overlay-field .overlay-input{
+    width: 45%;
+    background: gray;
+    border: 2px solid white;
+    border-radius: 5px;
+    outline: unset;
+    margin: 0 auto 0 0;
+    color: white;
+}
+.overlay-button{
+    display: flex;
+    height: 60px;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 0 20px 0 0;
+}
+.submit-new-item{
+   padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
