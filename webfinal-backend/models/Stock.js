@@ -15,6 +15,12 @@ const stockSchema = new Schema(
       type: Number,
       default: 0,
     },
+    creator_user: {
+      type: Schema.Types.ObjectId,
+    },
+    last_updater: {
+      type: Schema.Types.ObjectId,
+    },
   },
   { timestamps: true }
 );

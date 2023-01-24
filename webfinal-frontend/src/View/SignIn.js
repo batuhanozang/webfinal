@@ -1,9 +1,12 @@
-import Navbar from '../Components/Navbar.js';
+import Navbar from "../Components/Navbar.js";
+import SignInForm from "../Components/SignInForm.js";
 
 function SignIn() {
   return (
-    <Navbar/>
-     
+    <>
+      <Navbar />
+      <SignInForm />
+    </>
   );
 }
 
